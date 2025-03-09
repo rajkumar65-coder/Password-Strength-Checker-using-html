@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        
+        <!-- Security Tips -->
+        <div class="tips-section">
+            <span class="tip-label">Security Tip:</span>
+            <span class="tip-text" id="tipText"></span>
+        </div>
+
+        <!-- Password Input -->
+        <div class="input-section">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" autocomplete="off">
+            <button id="toggleVisibility">Show/Hide</button>
+        </div>
+
+        <!-- Strength Meter -->
+        <div class="strength-section">
+            <div class="strength-meter">
+                <div class="strength-bar" id="strengthBar"></div>
+            </div>
+            <div class="strength-label" id="strengthLabel">Strength: 0%</div>
+        </div>
+
+        <!-- Strength Criteria -->
+        <div class="criteria-section">
+            <div class="criterion" id="lengthCriterion">✓ 8+ characters</div>
+            <div class="criterion" id="upperCriterion">✓ Uppercase letter</div>
+            <div class="criterion" id="lowerCriterion">✓ Lowercase letter</div>
+            <div class="criterion" id="numberCriterion">✓ Number</div>
+            <div class="criterion" id="specialCriterion">✓ Special character</div>
+            <div class="criterion" id="specialCriterion">✓ Special character</div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-section">
+            <button id="generatePassword">Generate Password</button>
+            <button id="copyPassword">Copy to Clipboard</button>
+            <!-- <button id="configureRules">Configure Rules</button> -->
+        </div>
+
+        <!-- Strength History Graph -->
+        <div class="graph-section">
+            <canvas id="strengthChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.tips-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e3f2fd;
+    border-radius: 4px;
+}
+
+.tip-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input-section {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-section label {
+    font-weight: bold;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.strength-section {
+    margin: 20px 0;
+}
+
+.strength-meter {
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #c62828;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.strength-label {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.criteria-section {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.criterion {
+    padding: 8px;
+    border-radius: 4px;
+    color: #666;
+}
+
+.button-section {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1565c0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+.graph-section {
+    margin: 20px 0;
+    height: 300px;
+}
+
+/* Strength Level Colors */
+.weak .strength-bar { background-color: #c62828; }
+.moderate .strength-bar { background-color: #f57c00; }
+.strong .strength-bar { background-color: #2e7d32; }
+.very-strong .strength-bar { background-color: #1565c0; }
+
+.weak .strength-label { color: #c62828; }
+.moderate .strength-label { color: #f57c00; }
+.strong .strength-label { color: #2e7d32; }
+.very-strong .strength-label { color: #1565c0; }
